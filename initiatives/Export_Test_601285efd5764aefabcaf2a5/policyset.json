@@ -1,0 +1,50 @@
+{
+ "properties": {
+  "displayName": "Export_Test",
+  "policyType": "Custom",
+  "description": "Deze is alleen gebruik als voorbeeld voor export",
+  "metadata": {
+   "parameterScopes": {
+    "listOfAllowedLocations": "/providers/Microsoft.Management/managementGroups/mg-pg"
+   },
+   "createdBy": "e4500133-d408-4b7b-9ff1-a70b4c43605c",
+   "createdOn": "2021-04-28T12:12:44.6425717Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Add or replace a tag on resources_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/5ffd78d9-436d-4b41-a421-5baa819e3008",
+    "parameters": {
+     "tagName": {
+      "value": "Tag_Name_FJ"
+     },
+     "tagValue": {
+      "value": "Tag_Value_FJ"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "Allowed locations_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+    "parameters": {
+     "listOfAllowedLocations": {
+      "value": [
+       "europe",
+       "westeurope",
+       "northeurope"
+      ]
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/mg-pg/providers/Microsoft.Authorization/policySetDefinitions/601285efd5764aefabcaf2a5",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "601285efd5764aefabcaf2a5"
+}
